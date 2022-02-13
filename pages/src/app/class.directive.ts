@@ -8,7 +8,7 @@ export class ClassDirective {
   constructor(private element: ElementRef) { 
     this.element.nativeElement.style.backgroundColor = 'orange';
   }
-  @Input() set backgroundColor(newColor: string) {
+  @Input('appClass') set backgroundColor(newColor: string) {
     this.element.nativeElement.style.backgroundColor = newColor;
   }
 
