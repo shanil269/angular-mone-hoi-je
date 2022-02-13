@@ -6,10 +6,16 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class ClassDirective {
 
   constructor(private element: ElementRef) { 
-    this.element.nativeElement.style.backgroundColor = 'orange';
   }
-  @Input('appClass') set backgroundColor(newColor: string) {
-    this.element.nativeElement.style.backgroundColor = newColor;
+  @Input('appClass') set classNames(classObj: any) {
+    for(let key in classObj) {
+      if(classObj[key]) {
+        this.element.nativeElement.classList.add(key);
+      }
+      else {
+        this.element.nativeElement.classList.remove(key);
+      }
+    }
   }
 
 }
