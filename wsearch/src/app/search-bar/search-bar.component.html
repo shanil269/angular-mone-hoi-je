@@ -1,4 +1,10 @@
-<form (submit)="onSubmit()">
-    <input #inputBox (input)="term = inputBox.value" />
-</form>
+<div class="box">
+    <form (submit)="onSubmit()">
+        <input
+        placeholder="Enter search term"
+        class="input"
+         #inputBox (input)="term = inputBox.value" />
+    </form>
+    
+</div>
 
