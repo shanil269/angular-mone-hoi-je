@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="columns is-centered">
+        <div class="box column is-one-third">
+            <div class="columns is-centered">
+                <div class="buttons">
+                    <button (click)="onClick()" class="button is-success is-light">Random Photo</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="columns is-centered">
+                    <img *ngIf="photo" [src]="photo" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
