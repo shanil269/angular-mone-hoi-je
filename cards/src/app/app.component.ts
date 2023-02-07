@@ -25,5 +25,6 @@ export class AppComponent {
       username: '@biking122',
       content: 'I did some biking today.'
     }
+    //just testing.
   ];
 }
