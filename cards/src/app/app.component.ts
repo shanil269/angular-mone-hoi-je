@@ -26,5 +26,6 @@ export class AppComponent {
       content: 'I did some biking today.'
     }
     //just testing.
+    // just 2 acc ssh testing
   ];
 }
